@@ -78,7 +78,7 @@ export async function deleteImage(imageId: string) {
   }
 }
 
-// GET IMAGE
+// GET IMAGE (Single Image)
 export async function getImageById(imageId: string) {
   try {
     await connectToDatabase();
@@ -93,7 +93,7 @@ export async function getImageById(imageId: string) {
   }
 }
 
-// GET IMAGES
+// GET IMAGES (All Images )
 export async function getAllImages({
   limit = 9,
   page = 1,
